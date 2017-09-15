@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+	<S:Body>
+		<ns2:searchFlights xmlns:ns2="http://partner.v3.webservice.berlogic.de/">
+			<settings>
+				<agencyCode>__BERLOGIC_AGENCY__</agencyCode>
+				<salesPoint>__BERLOGIC_SALES_POINT__</salesPoint>
+				<agentCode>__BERLOGIC_AGENT_CODE__</agentCode>
+				<agentPassword>__BERLOGIC_PASSWORD__</agentPassword>
+				<dateTolerance>0</dateTolerance>
+				<lang>ru</lang>
+				<mixedVendors>true</mixedVendors>
+				<eticketsOnly>true</eticketsOnly>
+				<preferredCurrency>RUB</preferredCurrency>
+				<skipConnected>false</skipConnected>
+				<serviceClass>ECONOM</serviceClass>
+				
+                                <seats>
+					<entry>
+						<key>ADULT</key>
+						<value>1</value>
+					</entry>
+					<entry>
+						<key>CHILD</key>
+						<value>1</value>
+					</entry>
+					<entry>
+						<key>INFANT</key>
+						<value>1</value>
+					</entry>
+				</seats>
+			</settings>
+		</ns2:searchFlights>
+	</S:Body>
+</S:Envelope>
